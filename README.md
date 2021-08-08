@@ -1,2 +1,3 @@
 # Find-Tutor-
 This is a website through which students can easily find their respective subject tutor in their locality...
+And we aim to connect more students with teachers. In this lockdown period where everybody is inside the house. It is very hard to find a tutor. So through this website students can easily connect with the teachers of their locality according to their respective subjects.
