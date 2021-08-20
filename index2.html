@@ -1,0 +1,873 @@
+<html>
+
+<title>Find Tutor</title>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="device-width , initial-scale=1.0"
+
+
+<link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Mono:wght@100;500&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+
+
+
+
+
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+html,body{
+	width:100%;
+	height:100%;
+	margin:0px;
+	padding:0px;
+	overflow-x:hidden;
+	background-repeat: no-repeat;
+  background-attachment: fixed;
+   background-size: 100% 100%;
+  
+	
+}
+
+::-webkit-scrollbar{
+ display:none;
+}
+
+
+
+
+
+
+	
+#vid{
+width:100%;
+min-height:10vh;
+bottom:0;
+right:0;
+position:absolute;
+
+}
+
+
+.header{
+
+height:100%;
+width:100%;
+
+}
+.overlay
+{
+width:100%;
+height:720px;;
+background-color:rgba(0,0,0,0.5);
+position:absolute;
+top:0;
+left:0;
+}
+
+
+.navbar
+{
+width:100%;
+position:absolute;
+display:flex;
+padding-left:40px;
+background-color:rgba(0,0,0,0.3);
+/background-color:rgba(255,255,255, 0.1);
+top:0;
+left:0;
+height:80px;
+
+}
+
+nav{
+width:100%;
+overflow:hidden;
+flex:70%;
+
+}
+
+nav ul
+{
+list-style-type:none;
+text-align:left;
+padding-right:100px;
+}
+
+nav ul li{
+
+display:inline-block;
+padding-right:30px;
+}
+
+nav ul li a
+{
+text-decoration:none;
+/font-family: 'Roboto Mono', monospace;
+/font-family:'Open Sans Condensed', cursive;
+font-family: 'Roboto Mono', monospace;
+font-size:25px;
+color:white;
+}
+
+.logo
+{
+flex:30%;
+}
+
+.logo img
+{
+padding-left:250px;
+width:200pX;
+height:50px;
+padding-top:10px;
+}
+
+
+.show{
+  width:100%;
+  margin:auto;
+ top:0;
+ left:0;
+
+ 
+}
+
+
+.row
+{
+position:absolute;
+display:flex;
+margin-top:170px;             /*through this we can change the margin top of total header*/
+justify-content:space-around;
+width:100%;
+
+}
+
+.col-2 h1
+{
+/font-family:'Acme', sans-serif;
+/font-family:'Acme', cursive;
+font-family: 'Merriweather', cursive;
+font-size:50px;
+color:white;
+padding-top:60px;
+/padding-left:75px;
+letter-spacing:10px;
+}
+
+.col-2 p6
+{
+
+font-family:'Open Sans Condensed', cursive;
+font-size:30px;
+color:white;
+padding-top:0px;
+/padding-left:75px;
+letter-spacing:2px;
+}
+
+
+.col-2{
+text-align:center;
+padding-right:170px; /*through this we can change the margin left-right of total header*/
+padding-top:0px;
+}
+
+
+
+
+
+
+
+
+.search input{
+	
+	margin-top:78px;
+	border:4px solid white;
+	width:275px;
+	height:46px;
+	border-radius:50px;
+	font-size:25px;
+	padding:0px 25px;
+	 font-family: 'Roboto Mono', monospace;
+	  outline:none;
+	   background:transparent;
+	 
+}
+
+::-webkit-input-placeholder{
+	color:white;
+	
+}
+
+.but
+{
+	
+	flex:50%;
+	font-size:17px;
+	padding-left:370px;
+	margin-top:-42px;
+	
+}
+
+.block
+{
+	border:none;
+	background:transparent;
+	font-size:33px;
+	color:white;
+	cursor:pointer;
+}
+
+.search{
+margin-left:75px;
+}
+
+
+
+#frm{
+margin-top:10px;
+}
+
+
+
+.col-3 p7
+{
+
+font-family:'Open Sans Condensed', sans-serif;
+font-size:45px;
+color:white;
+padding-top:0px;
+padding-left:70px;
+
+}
+
+.col-3{
+margin-top:70px;
+
+}
+
+col-3
+{
+margin-top:10px;
+font-size:2px;
+}
+
+
+.secondpage
+{
+height:1000px;
+width:100%;
+position:absolute;
+background-image:url(teacher.png);
+   background-size: 750px 530px;
+
+ background-repeat:no-repeat;
+ margin-top:100px;
+}
+
+.navbar2{
+width:100%;
+position:absolute;
+padding-left:150px;
+left:0;
+height:70px;
+}
+
+#menu li a{
+color:black;
+text-decoration:none;
+font-family: 'Roboto Mono', monospace;
+font-size:25px;
+display:inline-block;
+}
+.navbar2 ul li
+{
+display:inline-block;
+padding-right:80px;
+}
+
+
+
+.secondpage p8{
+font-family:'Open Sans Condensed', cursive;
+/font-family:'Open Sans Condensed', sans-serif;
+font-size:45px;
+color:black;
+
+padding-left:830px;
+
+}
+
+.secondpage p9{
+font-family:'Open Sans Condensed', sans-serif;
+font-size:50px;
+color:black;
+font-family:'Merriweather', serif;
+padding-left:825px;
+
+}
+
+
+
+
+.head{
+padding-top:50px;
+}
+/*-------------------------login sign up button-----------------------------*/
+
+.signup{
+display:flex;
+margin-right:210px;
+justify-content:space-around;
+padding-top:60px;
+font-size:25px;
+
+}
+
+.login {
+
+ padding:8px 40px;
+ border-radius:30px;
+   transition:background 0.5s;
+   background: rgba(0,0,0,0.3);
+   color:black;
+ 
+   padding-left:50px;
+   flex:50%;
+   position:absolute;
+   margin-left:370px;   /*change the margin of login*/
+}
+
+
+.login a{
+text-decoration:none;
+color:white;
+
+}
+
+
+
+.register {
+flex:50%;
+text-decoration:none;
+ padding:8px 30px;
+ border-radius:30px;
+   transition:background 0.5s;
+   background: rgba(0,0,0,0.3);
+   color:black;
+  margin-right:15px;  /*change the margin of register*/
+   position:absolute;
+  
+}
+
+.register a{
+text-decoration:none;
+color:white;
+}
+
+
+
+.login:hover{
+     background:rgba(255,255,255, 0.3);
+}
+
+.register:hover{
+ background:rgba(255,255,255, 0.3);
+ /rgba(0,0,0,0.3);
+/rgba(255,255,255, 0.1);
+}
+
+
+/*-------------------------For second search-----------------------------*/
+
+.align{
+
+display : flex;
+}
+
+
+.search2 input{
+	
+	margin-top:48px;
+	border:4px solid black;
+	width:240px;
+	height:46px;
+	border-radius:50px;
+	font-size:25px;
+	padding:0px 25px;
+	 font-family: 'Roboto Mono', monospace;
+	  outline:none;
+	   background:transparent;
+	
+}
+
+.search1 input{
+	
+	margin-top:48px;
+	border:4px solid black;
+	width:240px;
+	height:46px;
+	border-radius:50px;
+	font-size:25px;
+	padding:0px 25px;
+	 font-family: 'Roboto Mono', monospace;
+	  outline:none;
+	   background:transparent;
+	
+}
+
+
+
+
+
+.but1
+{
+	
+	flex:20%;
+	font-size:17px;
+	padding-left:1365px;
+	margin-top:-43px;
+	
+	
+}
+
+.block1
+{
+	border:none;
+	background:transparent;
+	font-size:33px;
+	color:black;
+	cursor:pointer;
+}
+
+.search1{
+flex:30%;
+margin-left:827px;
+width:240px;
+
+}
+
+.search2{
+flex:30%;
+margin-left:1097px;
+width:240px;
+margin-top:-93px;
+}
+
+
+
+.search1 input::-webkit-input-placeholder /*throuh this we can change the color of input by div class*/
+{ 
+
+  color: black;
+  
+}
+
+
+.search2 input::-webkit-input-placeholder /*throuh this we can change the color of input by div class*/
+{ 
+
+  color: black;
+  
+}
+
+
+.writting p10{
+/font-family:'Merriweather', cursive;
+/font-family:'Open Sans Condensed', cursive;
+/font-family:'Anton', cursive;
+font-family:'Open Sans Condensed', sans-serif;
+font-size:48px;
+color:black;
+padding-top:0px;
+padding-left:105px;
+position:absolute;
+left:0;
+letter-spacing:4px;
+text-align:center;
+}
+
+.anouncement{
+margin-top:700px;
+position:absolute:;
+left:0;
+
+}
+
+.writting hr{
+margin-top:90px;
+width:1380px;
+border:0px solid black;
+position:absolute;
+margin-left:70px;
+}
+
+
+/*-------------------------For teachers section-----------------------------*/
+
+.teachers{
+min-width:1380px;
+padding-left:50px;
+position:absolute;
+padding-top:140px;
+padding-right:50px;
+padding-bottom:170px;
+}
+
+.row1{
+display:flex;
+flex-wrap: wrap;
+justify-content:center;
+max-width:15000px;
+margin-top:-70px;
+margin-left:28px;  /*through this line we can change the margin of the row1 */
+/border:5px solid black;
+margin-right:40px;
+}
+
+
+.row1 .col-5{
+ padding:40px 10px;
+ flex-basis:10%;
+    min-width:300px;
+	margin-left:50px;        /*through this line we can change the margin of the col-5*/
+	text-align:center;
+ box-shadow:0 0 20px 0 rgba(0,0,0,0.1);
+  cursor:pointer;
+    transition:transform 0.5s;
+	 height:360px;
+	 border-radius:30px;
+  margin-right:70px;
+  margin-top:70px;
+}
+
+
+
+.col-5 img{
+   width:220px;
+   height:200px;
+   margin-top:20px;
+   border-radius:50%;
+  
+   
+}
+
+.col-5:hover{
+  transform:translateY(-10px);
+}
+
+
+.col-5 p12{
+
+font-family:'Roboto Mono', monospace;
+}
+
+
+.col-5 p13{
+   
+   font-family:'Roboto Mono', monospace;
+}
+
+
+
+/*-------------------------For see more section-----------------------------*/
+
+.switch{
+width:100px;
+ margin-top:1080px;
+    position:absolute;
+   display:inline-block;
+   background: white;
+   color:white;
+   padding:8px 40px;
+  margin-left:662px;
+   border-radius:30px;
+   border:2px solid black;
+   transition:background 0.5s;
+   
+}
+
+
+.switch a{
+text-decoration:none;
+color:black;
+padding-left:12px;
+}
+
+
+
+.switch:hover{
+    background:rgba(0,0,0,0.3);
+}
+
+/*-------------------------For online meet section-----------------------------*/
+
+
+
+.meet{
+margin-left:80px;
+min-width:1420px;
+/border:3px solid black;
+min-height:400px;
+position:absolute;
+margin-top:1170px;
+
+}
+
+.meetimg{
+height:1000px;
+width:100%;
+/position:absolute;
+background-image:url(meet.png);
+   background-size: 750px 530px;
+
+ background-repeat:no-repeat;
+ margin-top:50px;
+ 
+ 
+
+
+}
+
+
+
+.meetimg p14 {
+
+padding-left:780px;
+font-size:55px;
+
+font-family:'Open Sans Condensed', sans-serif;
+/font-family: 'Bebas Neue', cursive;
+letter-spacing:6px;
+}
+
+
+
+
+ /*<p6> &#x2160;&nbsp;&nbsp;&nbsp;Find teacher's. &#x2161;&nbsp;&nbsp;Contact with them.&#x2162;&nbsp;Fix your coahing dates and time.</p6><br>*/
+
+
+</style>
+
+
+
+
+
+
+</head>
+<body>
+
+
+
+<div class="Show">
+<div class="header">
+
+
+<video id="vid" src="vi1.mp4" muted loop autoplay ></video>
+<div class="overlay"></div>
+
+<div class="navbar">
+<div class="logo">
+     <img src="lo1.png" >
+   </div>
+      <nav>
+        <ul id="MenuItems">
+           <li><a href="">Home<a/></li>  
+           <li><a href="">Product<a/></li>    
+           <li><a href="">Order<a/></li>  
+           <li><a href="">Order<a/></li>    
+           <li><a href="">Order<a/></li>    		   
+           <li><a href="account2.php">Account<a/></li> 
+		<li>
+		 </ul>
+      </nav>
+</div>
+
+<div class="row">
+<div class="col-2">
+
+        <h1>Find Your Tutor  </h1>
+		
+        <p6> Find the best teacher In your locality. we are ready to serve your need. Our aim is to help </p6><br>
+       
+		 <p6> student's in finding their respective subject teacher's in their locality</p6><br>
+		 
+		 
+		
+		
+		
+		 <div class="signup">
+		 
+		<div class="login"><a href=""class="btn">Login </a>	</div>
+        <div class="Register"><a href=""class="btn">Register</a></div>
+
+		
+		 </div>
+				 
+      </div>
+	  
+	  
+	  
+    
+        
+	
+	
+	
+</div>
+</div>
+<hr>
+
+</div>
+
+
+
+
+
+<div class="shape">
+<div class="navbar2">
+        <ul id="Menu">
+           <li><a href="">Science<a/></li>  
+           <li><a href="">Commerce<a/></li>    
+           <li><a href="">Humanities<a/></li>  
+           <li><a href="">Competitive<a/></li>    
+           <li><a href="">Primary<a/></li>    		   
+           <li><a href="account2.php">Entrance<a/></li> 
+		 </ul>
+    
+</div>
+
+<div class="secondpage">
+<div class="head">
+         <p9> What are you waiting for?</p9><br><br><br>
+         <p8> Search teacher,s according to your need. </p8><br>
+		  <p8>Or you can search according to your class. </p8><br>
+		   <p8>Now Let's Go! And fix your date's for classes.</p8><br>
+		<div class="align"> 
+		 <form action="search.php" method="POST" id="frm">
+		<div class="search1"><input type="text" name="box"  placeholder="Subject.." style="input-color: black;"></div>
+		<div class="search2"><input type="text" name="box"  placeholder="Location.." style="input-color: black;"></div>
+		<div class="but1" name="submit"> <button class="block1" type="submit" name="sub"><i class="fa fa-search"></i></button></div>
+		</form>	
+		 </div>
+</div>
+</div>
+</div>
+<br>
+
+<div class="anouncement">
+<div class="writting"> <p10>Learn from the largest community of professional experienced tutors</p10> <hr></div>
+
+<div class="teachers">
+  <div class="row1">
+
+        <div class="col-5">  
+           <p13>I am pursuing mtech from NATIONAL INSTITUTE OF TECHNOLOGY,TRICHY.</p13>
+         <br>
+         <a href=""> <img src="ravikumar.jpg"></a>
+         <br><br><br>
+         <p12>-Ravi Kumar Pandey.<br>Maths,Digital Electronics and Analog Electronics </p12>
+          </div>
+
+         <div class="col-5">
+         <p13>I am a teacher of mathematics and computer science for the past 4 years</p13>
+         <br>
+         <a href=""> <img src="oliveroy.jpg"></a>
+         <p12><br><br>-Olive Roy,<br>Physics, Computer Science & Mathematics.</p12>
+         </div>
+
+
+         <div class="col-5">
+         <p13> I have 9 years of teaching experience.Graduate from  RCCIIT,KOLKATA</p13>
+         <br>
+          <a href=""> <img src="sharmilabiswas.jpg"></a>
+         <p12><br><br>-Sharmila Biswas,<br>Electronics and Communication Engineering, Maths</p12>
+         </div>
+         
+		   <div class="col-5">
+         <p13> I am doing my Hons in English Literature from Calcutta University.</p13>
+         <br>
+          <a href=""> <img src="debasmitadutta.jpg"></a>
+         <p12><br><br>-Debasmita Dutta,<br>History and Political Science,English</p12>
+         </div>
+		 
+		   <div class="col-5">
+         <p13> I am a computer science student.Currently pusuing CSE.</p13>
+         <br><br>
+          <a href=""> <img src="esadasgupta.jpg"></a>
+         <p12><br><br>-Esa Das Gupta,<br>Math,Drawing and painting</p12>
+         </div>
+       
+	   <div class="col-5">
+         <p13>I am working at Paytm (Assistant manager in Data Science team).</p13>
+         <br>
+          <a href=""> <img src="raj.jpg"></a>
+         <p12><br><br>-Rajashri Dey <br>Maths(CBSE),Python 3 </p12>
+         </div>
+
+  </div>
+ </div>
+ 
+ 
+
+<br><br><br><br><br>
+
+<div class="switch"><a href="">SEE MORE</a></div>
+
+</div>  
+
+
+
+
+<div class="online meet">
+
+<div class="meetimg">
+
+
+<p14>&nbsp;ONE&nbsp;&nbsp;TWO&nbsp; ONE &nbsp;MEET</p14>
+
+
+
+
+
+</diV>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
